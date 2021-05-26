@@ -1,4 +1,4 @@
-sprite $azure [48x32/16] {
+tsprite $azure [48x32/16] {
 000000000000000000000000000000000000000000000000
 000000000000000000000000000000000000000000000000
 00000000000000379ABA8510000000000000000000000000
@@ -33,7 +33,7 @@ sprite $azure [48x32/16] {
 000000000000000000000000000000000000000000000000
 }
 
-!define AZURE(_alias) ENTITY(database,black,azure,_alias,OFF AZURE)
-!define AZURE(_alias,_label) ENTITY(database,black,azure,_label,_alias,OFF AZURE)
+!define AZURE(_alias) ENTITY(rectangle,black,azure,_alias,OFF AZURE)
+!define AZURE(_alias,_label) ENTITY(rectangle,black,azure,_label,_alias,OFF AZURE)
 !define AZURE(_alias,_label,_shape) ENTITY(_shape,black,azure,_label,_alias,OFF AZURE)
 !define AZURE(_alias,_label,_shape,_color) ENTITY(_shape,_color,azure,_label,_alias,OFF AZURE)
