@@ -34,6 +34,6 @@ sprite $azure [48x32/16] {
 }
 
 !define AZURE(_alias) ENTITY(rectangle,black,azure,_alias,OFF AZURE)
-!define AZURE(_alias,_label) ENTITY(rectangle,black,azure,_label,_alias,OFF AZURE)
+!define AZURE(_alias,_label) ENTITY(database,black,azure,_label,_alias,OFF AZURE)
 !define AZURE(_alias,_label,_shape) ENTITY(_shape,black,azure,_label,_alias,OFF AZURE)
 !define AZURE(_alias,_label,_shape,_color) ENTITY(_shape,_color,azure,_label,_alias,OFF AZURE)
